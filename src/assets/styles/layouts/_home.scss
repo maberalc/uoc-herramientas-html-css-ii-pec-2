@@ -22,6 +22,10 @@ body {
   justify-content: space-between;
   align-items: center;
   border-top: 1px solid $link-color;
+  @media only screen and (max-width: 900px) {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
 
 .header {
@@ -36,6 +40,10 @@ body {
   border-bottom: 1px solid $link-color;
   position: relative;
   z-index: 1;
+  @media only screen and (max-width: 900px) {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
 
 ul {
@@ -45,6 +53,14 @@ ul {
   display: flex;
   flex-direction: row;
   gap: 4rem;
+  @media only screen and (max-width: 500px) {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+ul:is(.social) {
+  flex-direction: row;
 }
 
 a {
@@ -60,11 +76,11 @@ a {
 
 .main__grid {
   overflow: hidden;
+  height: 66vh;
   @supports (display: grid) {
     display: grid;
     grid-template-rows: 1fr 4fr 2fr 1fr 1fr;
     grid-template-columns: 4fr 3fr 4fr;
-    height: 66vh;
   
     .header {
       grid-column: 1 / 4;
@@ -78,7 +94,9 @@ a {
     top: 0;
     left: 0;
     right: 0;
-    height: 66vh;
+  }
+  @media only screen and (max-width: 900px) {
+    height: 40vh;
   }
 }
 
@@ -119,6 +137,13 @@ a {
   background: $background-contrast;
   height: 100%;
   border-radius: 10px 10px 0 0;
+
+  @media only screen and (max-width: 900px) {
+    font-size: 1.5rem;
+  }
+  @media only screen and (max-width: 650px) {
+    font-size: 1rem;
+  }
 }
 
 .main__grid--text {
@@ -143,6 +168,9 @@ a {
   height: 100%;
   padding: 0 10px;
   border-radius: 0 0 10px 10px;
+  @media only screen and (max-width: 900px) {
+    font-size: 0.8rem;
+  }
 }
 
 .contact__container {
@@ -151,6 +179,12 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 90%;
+  margin: 0 auto;
+
+  p {
+    text-align: center;
+  }
 }
 
 .footer__container {
