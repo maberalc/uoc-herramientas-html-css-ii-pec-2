@@ -1,0 +1,51 @@
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "npm:bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+$primary: $link-color;
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "npm:bootstrap/scss/variables";
+@import 'npm:bootstrap/scss/variables-dark';
+@import "npm:bootstrap/scss/mixins";
+@import "npm:bootstrap/scss/maps";
+@import 'npm:bootstrap/scss/utilities';
+
+// 4. Include any optional Bootstrap components as you like
+@import "npm:bootstrap/scss/root";
+@import "npm:bootstrap/scss/reboot";
+@import "npm:bootstrap/scss/type";
+@import "npm:bootstrap/scss/images";
+@import "npm:bootstrap/scss/containers";
+@import "npm:bootstrap/scss/grid";
+@import "npm:bootstrap/scss/tables";
+@import "npm:bootstrap/scss/forms";
+@import "npm:bootstrap/scss/buttons";
+@import "npm:bootstrap/scss/transitions";
+@import "npm:bootstrap/scss/dropdown";
+@import "npm:bootstrap/scss/button-group";
+@import "npm:bootstrap/scss/nav";
+@import "npm:bootstrap/scss/navbar";
+@import "npm:bootstrap/scss/card";
+@import "npm:bootstrap/scss/accordion";
+@import "npm:bootstrap/scss/breadcrumb";
+@import "npm:bootstrap/scss/pagination";
+@import "npm:bootstrap/scss/badge";
+@import "npm:bootstrap/scss/alert";
+@import "npm:bootstrap/scss/progress";
+@import "npm:bootstrap/scss/list-group";
+@import "npm:bootstrap/scss/close";
+@import "npm:bootstrap/scss/toasts";
+@import "npm:bootstrap/scss/modal";
+@import "npm:bootstrap/scss/tooltip";
+@import "npm:bootstrap/scss/popover";
+@import "npm:bootstrap/scss/carousel";
+@import "npm:bootstrap/scss/spinners";
+@import "npm:bootstrap/scss/offcanvas";
+@import "npm:bootstrap/scss/placeholders";
+
+// Helpers
+@import "npm:bootstrap/scss/helpers";
+
+// Utilities
+@import "npm:bootstrap/scss/utilities/api";

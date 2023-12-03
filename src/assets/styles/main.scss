@@ -15,10 +15,10 @@
  * see commented examples below
  */
 
-// @import "some-node-module";
-// @import "@some-company/some-node-module";
-@import "npm:bootstrap/dist/css/bootstrap.css";
-@import "npm:@fortawesome/fontawesome-free/css/all.css";
+ @import "npm:@fortawesome/fontawesome-free/css/all.css";
+ // @import "npm:bootstrap/dist/css/bootstrap.css";
+ // importar bootstrap desde scss para personalizarlo
+ @import "custom";
 
 /**
  * Import layouts
