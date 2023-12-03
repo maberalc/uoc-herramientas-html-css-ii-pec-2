@@ -45,6 +45,9 @@ hr {
   width: 60%;
   margin: 16px auto;
 }
+hr:has(+ ol) {
+  margin-top: 32px;
+}
 
 ol {
   list-style: none;
@@ -86,18 +89,17 @@ ol {
   }
 }
 
-.article__text-1 {
+.article__text-1,
+.article__text-2 {
   display: flex;
-  flex-direction: row;
   width: 60%;
   margin: 0 auto;
 }
-
+.article__text-1 {
+  flex-direction: row;
+}
 .article__text-2 {
-  display: flex;
   flex-direction: column;
-  width: 60%;
-  margin: 0 auto;
 }
 
 .article__text-3 {
